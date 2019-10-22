@@ -1,12 +1,15 @@
 /* --------------------------------------------------------
-Style Sheet for Software Engineering Plus
+Style Sheet for Online Developer Plus, Inc
 version: 1.0
-last modified: 11.21.2017 by Brian Kidd
+last modified: 10.22.2019 by Brian Kidd
 author: Brian Kidd
 email: brian.kidd.one@gmail.com
 website: briankiddmedia.com
 ----------------------------------------------------------*/
-
+html {
+    position: relative;
+    min-height: 100%;
+}
 /*body*/
 body{
 	background-image: url(../img/serverRoom1.jpg);
@@ -15,7 +18,6 @@ body{
 	background-attachment: fixed;
 	background-size:  cover;
 	font-family: 'Roboto', sans-serif;
-	
 }
 body p{
 	font-size:17px;
@@ -33,6 +35,7 @@ body h1{
 body h2{
 	font-family: 'Roboto', sans-serif;
 	color: #457ABF;
+	font-size: 1.75em;
 	text-align:center;
 	font-weight:bold;
 }
@@ -40,18 +43,22 @@ a{
 	text-decoration:none;
 }
 a:hover{
-	color:#F2DC05;
-	
+	text-decoration: underline;
 }
 table.course-descriptions a{
 	text-decoration:underline;
 	color:#5CA3FF;
-	
 }
  table.course-descriptions a:hover{
 	text-decoration:none;
 	color:#457ABF;
-	
+}
+table.estimated-salaries{
+	margin: auto;
+	width: 50%;
+}
+table td.table-data-align-right{
+	text-align:right;
 }
 /*navbar*/
 .navbar-inverse{
@@ -111,11 +118,16 @@ li.nav-tab a:active{
 #headerTable{
 	margin: 0 auto;
 }
-img#sepLogo{
+img#odpLogo{
 	margin-right:30px;
 	border:3px solid #457ABF;
 	border-radius:5px;
 }
+ img#intelLogo{
+	margin-bottom:10px;
+	width:300px;
+	height:188px;
+} 
 h1#companyName{
 	display:inline;
 	font-size:5.25em;
@@ -132,18 +144,42 @@ h1#companyName{
 }
 h2#linkedIn{
 	margin-top:-10px;
+	font-size: 1.5em;
+}
+h2#linkedIn a{
+	color: #5CA3FF;
+}
+h2.course-header{
+	text-align:left;
+	margin-left: 40px;
+}
+hr{
+	border-color: #546780;
 }
 .ul-list-circle{
 	list-style-type:circle;
 	font-size:17px;
 	color:#404040;
 }
+ul.unordered-list-bold{
+	list-style-type:none;
+	font-size:17px;
+	color: #404040;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+ul.unordered-list{
+	list-style-type:none;
+	font-size:17px;
+	color: #404040;
+	font-family: 'Roboto', sans-serif;
+}
 .table{
 	font-size:17px;
 	font-family: 'Roboto', sans-serif;
 }
 .table th{
-	color:#D00505;
+	font-size:1.25em;
 }
 .table td{
 	color: #546780;
@@ -159,8 +195,11 @@ div#footer{
 	background-color:#457ABF;
 	color:#F2DC05;
 	text-align:center;
+	margin-top: 30px;
 	padding-top:10px;
 	height:50px;
+	position: relative;
+	bottom: 0;
 }
 
 @media only screen and (max-width:1200px){
@@ -168,7 +207,7 @@ div#footer{
 	h1#companyName{
 		font-size:4.5em;
 	}
-	img#sepLogo{
+	img#odpLogo{
 		margin-right:10px;
 	}
 }
@@ -188,7 +227,7 @@ div#footer{
 	#mobileHeaderDisplay{
 		display:block;
 	}
-	img#sepLogo{
+	img#odpLogo{
 		margin: 0 auto;
 	}
 	.container-section-body p{
