@@ -1,7 +1,7 @@
 /* --------------------------------------------------------
 Style Sheet for Online Developer Plus, Inc
 version: 1.0
-last modified: 10.22.2019 by Brian Kidd
+last modified: 10.25.2019 by Brian Kidd
 author: Brian Kidd
 email: brian.kidd.one@gmail.com
 website: briankiddmedia.com
@@ -216,6 +216,13 @@ div#footer{
 	
 	h1#companyName{
 		font-size:3.5em;
+	}
+}
+@media only screen and (max-width:992px){
+	
+	table.estimated-salaries {
+		margin: auto;
+		width: 90%;
 	}
 }
 
