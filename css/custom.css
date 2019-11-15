@@ -1,7 +1,7 @@
 /* --------------------------------------------------------
 Style Sheet for Online Developer Plus, Inc
-version: 1.0
-last modified: 10.25.2019 by Brian Kidd
+version: 8.0
+last modified: 11.5.2019 by Brian Kidd
 author: Brian Kidd
 email: brian.kidd.one@gmail.com
 website: briankiddmedia.com
@@ -18,6 +18,39 @@ body{
 	background-attachment: fixed;
 	background-size:  cover;
 	font-family: 'Roboto', sans-serif;
+}
+/* #bg { position: fixed; top: 0; left: 0; z-index:}
+.bgwidth { width: 100%; }
+.bgheight { height: 100%; } */
+#pageContainer{
+	position: relative;
+	min-height: 100vh;
+}
+#contentWrap{
+	padding-bottom: 4.5rem;
+}
+#banner{
+	position: relative;
+}
+#bannerImg{
+	z-index:1;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	border: solid #457abf 10px;
+}
+.close-button{
+	position:absolute;
+	left: 50%;
+	text-align:center;
+	color:white;
+	text-decoration:underline;
+	font-weight:bold;
+	cursor:pointer;
+	z-index:100;
 }
 body p{
 	font-size:17px;
@@ -54,6 +87,10 @@ table.course-descriptions a{
 	color:#457ABF;
 }
 table.estimated-salaries{
+	margin: auto;
+	width: 50%;
+}
+table.enrollment-classes{
 	margin: auto;
 	width: 50%;
 }
@@ -139,19 +176,26 @@ h1#companyName{
 #mobileHeaderDisplay{
 	display:none;
 }
-#mKembelLinkedIn{
-	font-size:1.5em;
-}
-h2#linkedIn{
+h2.linkedIn{
 	margin-top:-10px;
 	font-size: 1.5em;
 }
-h2#linkedIn a{
+h2.linkedIn a{
 	color: #5CA3FF;
 }
 h2.course-header{
 	text-align:left;
 	margin-left: 40px;
+}
+h2.h2-center-header{
+	text-align:center;
+	margin-left: 150px;
+	margin-right: 150px;
+	color: #404040;
+}
+h3{
+	font-weight:bold;
+	color:black;
 }
 hr{
 	border-color: #546780;
@@ -184,6 +228,15 @@ ul.unordered-list{
 .table td{
 	color: #546780;
 }
+form#loginForm{
+	text-align: center;
+}
+#testLoginInput{
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	padding: 10px 10px 10px 10px;
+	width: 50%;
+}
 div#footer{
 	/*position: absolute;
 	bottom: 0;
@@ -195,11 +248,15 @@ div#footer{
 	background-color:#457ABF;
 	color:#F2DC05;
 	text-align:center;
-	margin-top: 30px;
-	padding-top:10px;
-	height:50px;
-	position: relative;
+	/* margin-top: 30px; */
+	/* padding-top:10px; */
+	/* height:50px; */
+	position: absolute;
 	bottom: 0;
+	width: 100%;
+	padding-top:10px;
+	height: 4.5rem;
+
 }
 
 @media only screen and (max-width:1200px){
@@ -224,6 +281,16 @@ div#footer{
 		margin: auto;
 		width: 90%;
 	}
+	table.enrollment-classes{
+		margin: auto;
+		width: 90%;
+	}
+	h2.h2-center-header{
+		text-align:center;
+		margin-left: 60px;
+		margin-right: 60px;
+	
+	}
 }
 
 @media only screen and (max-width:768px){
@@ -244,6 +311,12 @@ div#footer{
 	.ul-list-circle{
 		margin-left:-20px;
 	}
+	h2.h2-center-header{
+		text-align:center;
+		margin-left: 40px;
+		margin-right: 40px;
+	
+	}
 	
 }
 
@@ -251,5 +324,11 @@ div#footer{
 	
 	div#footer{
 		height:70px;
+	}
+	h2.h2-center-header{
+		text-align:center;
+		margin-left: 10px;
+		margin-right: 10px;
+	
 	}
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Online Developer Plus, Inc.</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,12 +9,13 @@
 	<meta name="description" content="Mark Kembel, Online Developer Plus, Inc.">
 	<meta name="keywords" content="online technical training, online .NET programming training, online C# programming training, online Program management training,
 	online programming training, online website development training, online software Testing training, online HTML5 training, online JavaScript training">
-	<meta name="author" content="Brian Kidd">
+  <meta name="author" content="Brian Kidd">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	
-    <title>ODP</title>
-
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 	<!--Custom Stylesheet-->
 	<link href = "css/custom.css" rel = "stylesheet">
 	<!-- fonts -->
@@ -29,6 +31,8 @@
     <![endif]-->
   </head>
   <body>
+      <div id = "pageContainer">
+          <div id = "contentWrap">
   <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -41,9 +45,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-			<li class="active nav-tab home-tab"><a href="index.html">Home</a></li>
-			<li class = "nav-tab"><a href="index.html#courses">Courses</a></li>
-			<li class = "nav-tab"><a href="index.html.#staff">Staff</a></li>
+			<li class="nav-tab"><a href="index.html">Home</a></li>
+			<li class = "active nav-tab home-tab"><a href="index.html#courses">Courses</a></li>
+      <li class = "nav-tab"><a href="index.html#staff">Staff</a></li>
+      <li class = "nav-tab"><a href="enrollment.html">Enrollment</a></li>
       </ul>
     </div>
   </div>
@@ -92,7 +97,7 @@
 		$('.nav-tab').removeClass('active');
         $('.nav-tab').removeClass("nav-active");
         $(this).addClass("nav-active");
-		$(this).addClass("active")		
+		    $(this).addClass("active");		
     });
 	/*this jQuery script makes collapsed navigation retract once a nav item is selected in the fixed nav*/
 	  $(document).on('click', function(event){
@@ -109,24 +114,12 @@
       }
     });
 	
-	/*script to pin footer to bottom of website */
-	
-	$(document).ready(function() {
-
-	   var docHeight = $(window).height();
-	   var footerHeight = $('#footer').height();
-	   var footerTop = $('#footer').position().top + footerHeight;
-
-	   if (footerTop < docHeight) {
-		$('#footer').css('margin-top', 10+ (docHeight - footerTop) + 'px');
-	}
-  });
-
 </script>
+    </div><!--end containerWrap id-->
+</div><!--end pageContainer id-->	
 	
 <div id ="footer">
-	Online Developer Plus, Inc. | &copy; <script type="text/javascript">document.write(new Date().getFullYear());
-	</script> | All Rights Reserved
+    Online Developer Plus, Inc. | &copy; 2019 - 2022 | All Rights Reserved
 </div>
 		
 </body>

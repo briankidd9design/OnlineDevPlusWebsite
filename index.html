@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+	<title>Online Developer Plus, Inc.</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<meta name="description" content="Mark Kembel, Online Developer Plus, Inc.">
-	<meta name="keywords" content="online technical training, online .NET programming training, online C# programming training, online Program management training,
-	online programming training, online website development training, online software Testing training, online HTML5 training, online JavaScript training">
+	<meta name="keywords" content="online technical training, artificial intelligence, machine learning, python programming, 
+	online .NET programming training, online C# programming training, online program management training,
+	online programming training, online website development training, online software testing training, 
+	online HTML5 training, online JavaScript training">
 	<meta name="author" content="Brian Kidd">
 	
-    <title>ODP</title>
-
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 	<!--Custom Stylesheet-->
+	<link rel= "preload" href = "css/custom.css" as = "style">
 	<link href = "css/custom.css" rel = "stylesheet">
 	<!-- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
@@ -29,6 +34,8 @@
     <![endif]-->
   </head>
   <body>
+  <div id = "pageContainer">
+	  <div id = "contentWrap">
   <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -44,6 +51,8 @@
 			<li class="active nav-tab home-tab"><a href="#home">Home</a></li>
 			<li class = "nav-tab"><a href="#courses">Courses</a></li>
 			<li class = "nav-tab"><a href="#staff">Staff</a></li>
+			<li class = "nav-tab"><a href="enrollment.html">Enrollment</a></li>
+			<!--<li class = "nav-tab"><a href="tests.php">Final Tests</a></li>-->
       </ul>
     </div>
   </div>
@@ -66,19 +75,24 @@
 	</div>
 </div>
 </header>
-
+<!--Banner-->
+	<div id = "banner" class = "col-xl-12 col-lg-12 col-md-12 ">	
+		<a href = "enrollment.html"><img id = "bannerImg" class = "img-responsive" src = "img/banner.jpg" alt = "enrollment banner"></a>
+		<div class = "close-button" onclick="this.parentElement.style.display='none';">
+				Close 
+		</div>
+	</div> 
+<!--end banner-->
 	<div id = "home" class = "container container-section-body">
 		<div class = "row">
 			<div class = "col-xl-12 col-lg-12">
-			<!--	<h1>Technical Training Business Coming Online in 2018 </h1> -->
 				<h1>Mission Statement </h1>
-				
-				<p><span style = "color:#457ABF;">O</span>nline <span style = "color:#D00505;">D</span>eveloper <span style = "color:#f0b400; font-weight:bold">P</span>lus, Inc. 
+				<h2 class = "h2-center-header">The U.S. Bureau of Labor projects that up to one million jobs for programming will go unfilled by 2020.</h2>
+				<p><span style = "color:#457ABF;z-index:2;">O</span>nline <span style = "color:#D00505;">D</span>eveloper <span style = "color:#f0b400; font-weight:bold">P</span>lus, Inc., 
 				a company with three Microsoft alumni partners, offers online courses covering several areas of the software industry, 
-				such as Python programming and artificial intelligence, to colleges, individuals, and companies. Our Self Paced online
+				such as Python programming and artificial intelligence, to colleges, individuals, and companies. Our self-paced online
 				courses are designed to provide the necessary information for students to obtain a position in the 
-				Hi-Tech industry.  We are partnered with several national employment agencies. The U.S. Bureau of 
-				Labor projects that up to one million jobs for programming will go unfilled by 2020.</p>   
+				Hi-Tech industry.  We are partnered with several national employment agencies.</p>   
 			
 				<p>Students can earn a Certificate and become certified if they pass the final online test. 
 				 They will earn college course credits for each course when they take the course from our college partners. 
@@ -87,8 +101,7 @@
 				 The Python Programming course is perfect for individuals to update their programming skills. 
 				 If they already know C++, C or C# the Python Programming course will take less time to learn.</p>
 
-				<p>Take advantage of our Corporate program with group pricing to upgrade employees’ skills.  Great for employment agencies 
-				that would like to update workers’ skills.</p>
+				<p>Our Corporate program with group pricing is great for employment agencies that would like to update workers’ skills.</p>
 		</div>
 	</div>
 </div>
@@ -122,7 +135,7 @@
 			<td>$2,495.00</td>
 		</tr>
 		<tr>
-		<td class = "text-right"><span style = "color:#000000;align-content:right">Tuition Package</span></td>
+		<td class = "text-right"><span style = "color:#000000;">Tuition Package</span></td>
 			<td><span style = "color:#000000;">$3,995.00</span></td>
 		</tr>
 		<tr>
@@ -130,7 +143,7 @@
 			<td></td>
 		</tr>
 		<tr>
-			<td>Python Application Programming</td>
+			<td>Basic Python Programming</td>
 			<td>$1,995.00</td>
 		</tr>
 		<tr>
@@ -138,7 +151,7 @@
 			<td>$2,495.00</td>
 		</tr>
 		<tr>
-			<td class = "text-right"><span style = "color:#000000;align-content:right">Tuition Package</span></td>
+			<td class = "text-right"><span style = "color:#000000;">Tuition Package</span></td>
 			<td><span style = "color:#000000;">$3,995.00</span></td>
 		</tr>
 		<tr>
@@ -154,7 +167,7 @@
 			<td>$2,495.00</td>
 		</tr>
 		<tr>
-			<td class = "text-right"><span style = "color:#000000;align-content:right">Tuition Package</span></td>
+			<td class = "text-right"><span style = "color:#000000;">Tuition Package</span></td>
 			<td><span style = "color:#000000;">$4,595.00</span></td>
 		</tr>
 		<tr>
@@ -167,14 +180,14 @@
 		</tr>
 		<tr>
 			<td>Basic Python Programming</td>
-			<td>$1,195.00</td>
+			<td>$1,995.00</td>
 		</tr>
 		<tr>
 			<td>Python with Advanced AI</td>
 			<td>$2,495.00</td>
 		</tr>
 		<tr>
-			<td class = "text-right"><span style = "color:#000000;align-content:right">Tuition Package</span></td>
+			<td class = "text-right"><span style = "color:#000000;">Tuition Package</span></td>
 			<td><span style = "color:#000000;">$5,995.00</span></td>
 		</tr>
     </tbody>
@@ -185,15 +198,12 @@
 		<div class = "col-xl-12 col-lg-12">
 				<img src = "img/Intel.png" class = "img-responsive center-block" id = "intelLogo" alt = "Intel Logo">
 		</div>
-
+		
 		<h1>Intel Partner in Artificial Intelligence </h1>
+		
 		<h2>Estimated Salaries for Job Positions</h2>
 		<table class="table estimated-salaries">
 			<tbody>
-					<tr>
-						<td>C# Application Programming</td>
-						<td class = "table-data-align-right">$ 70K to $ 120K</td>
-					</tr>
 					<tr>
 						<td>Software Test Developer Engineer</td>
 						<td class = "table-data-align-right">$ 75K to $ 120K</td>
@@ -213,14 +223,17 @@
 			</tbody>
 		</table>
 		
-		<p class = text-center>All courses provide instructors’ support with answering questions via email.  A special 
-		file will be posted containing FAQs (frequently asked questions) on the course description page.</p>
-
+		<p class = text-center>All courses provide instructors’ support with answering questions.
+		Students scoring 80% or better receive a “Certificate of Completion” for each course.</p>
+		<p class = "text-center">Payment, We accept:</p> <img class = "center-block" src="https://www.merchantequip.com/image/?logos=v|m|a|d&height=64" 
+		alt="Merchant Equipment Store Credit Card Logos"/>
+		<p class = "text-center">Please see our <a href = "enrollment.html">enrollment page</a> for more information.</p>
 		<h2>Training Materials</h2>
 		<p class = "text-center">Special online software that provides an instructor’s voice to a Microsoft PowerPoint
 		 slide shows</p>
-		 <p class = "text-center">Classes are taken online using a Desktop PC with speakers or Laptop PC</p>
-		 <p class = "text-center"><span style = "font-weight:bold">Sales and Information:</span> 425.305.8155 or <a href="mailto:jesicasartell@gmail.com?subject=Request For Sales Information About OnDevPlus" title="Send Email">jesicasartell@gmail.com</a></p>
+		<p class = "text-center">Classes are taken online using a Desktop PC with speakers or Laptop PC</p>
+		<p class = "text-center"><span style = "font-weight:bold">Sales and Information:</span> 425.305.8155 
+	 <!--<a href="mailto:jesicasartell@gmail.com?subject=Request%20For%20Sales%20Information%20About%20OnDevPlus" title="Send Email">jesicasartell@gmail.com</a></p>-->
 	</div>
 </div><!-- end courses-->
 
@@ -228,14 +241,14 @@
 		<div class = "row">
 			<div class = "col-xl-12 col-lg-12">
 			<h1>Staff</h1>
-			<h2>Jessica Sartell - National Director of Sales</h2>
+			<h2>Jesica Sartell - National Director of Sales</h2>
 			
 			<p>Jesica has 15+ years of enterprise sales and marketing experience, with an emphasis on software and 
 			technology sales to medical and surgical markets.  She brings Fortune 100 (Microsoft, Xerox, 3M), Mid-market, 
 			and Start-up Company sales experience and a consistent record of leading teams in revenue attainment, closing 
 			complex orders, and managing territories on a regional and national level. </p>
 			
-			<h2 id = "linkedIn"><a href = "http://www.linkedin.com/in/jesicasartell" target="_blank">Jesica Sartell LinkedIn <i id = "mKembelLinkedIn" class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a></h2>
+			<h2 class= "linkedIn"><a href = "http://www.linkedin.com/in/jesicasartell" target="_blank">Jesica Sartell LinkedIn <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></h2>
 			<hr>
 			<h2>Mark Kembel - Founder and CEO</h2>
 			
@@ -246,7 +259,7 @@
 			2.0 & 3.0 printing for 3 years and later managed Windows 95 printer testing for over 3 years at Microsoft.
 			Our online program allows us to train and test students skills over the internet.</p>
 			
-			<h2 id = "linkedIn"><a href = "https://www.linkedin.com/in/mark-kembel-84007377/" target="_blank">Mark Kembel LinkedIn <i id = "mKembelLinkedIn" class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a></h2>
+			<h2 class= "linkedIn"><a href = "https://www.linkedin.com/in/mark-kembel-84007377/" target="_blank">Mark Kembel LinkedIn <i class= "fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></h2>
 			<hr>
 			<h2>Randy Gerl - Executive Technical Assistant</h2>
 			
@@ -257,14 +270,23 @@
 			3.X printing and division wide testing of the Windows 95 Setup program.  Additional teaching related experience
 			from writing a text book on relativistic physics for beginning students.</p>
 			
-			<h2 id = "linkedIn"><a href = " https://www.linkedin.com/in/randy-gerl-42968614a/" target="_blank">Randy Gerl LinkedIn <i id = "mKembelLinkedIn" class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a></h2>
-
-
+			<h2 class = "linkedIn"><a href = " https://www.linkedin.com/in/randy-gerl-42968614a/" target="_blank">Randy Gerl LinkedIn <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></h2>
+			<hr>
+			<h2>Brian Kidd - Web Developer</h2>
+			
+			<p>Brian is a Web and Multimedia Developer who for the last 6 years has enthusiastically applied his 
+			developing and design skills to meet all of his clients’ needs, including Online Developer Plus, Inc. Besides web 
+			developing, Brian's professional background includes journalism, music production, data entry, sales, 
+			and corporate communications. This makes him an approachable developer and communicator
+			who enjoys making ideas and visions become tangible and effective realities.</p>
+			
+			<h2 class = "linkedIn"><a href = "https://www.linkedin.com/in/briankidd9design/" target="_blank">Brian Kidd LinkedIn <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></h2>
 
 		</div>
 	</div>
-</div>
+</div><!--end staff-->
 
+<!--Page Scripts-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -279,8 +301,12 @@
         $('.nav-tab').removeClass("nav-active");
         $(this).addClass("nav-active");
 		$(this).addClass("active")		
-    });
-	/*this jQuery script makes collapsed navigation retract once a nav item is selected in the fixed nav*/
+	});
+	/* Code for Banner to dissappear*/
+	setTimeout(function() {
+  		$("#banner").fadeOut().empty();
+	}, 10000);
+/*this jQuery script makes collapsed navigation retract once a nav item is selected in the fixed nav*/
 	  $(document).on('click', function(event){
       var $clickedOn = $(event.target),
           $collapsableItems = $('.collapse'),
@@ -295,25 +321,14 @@
       }
     });
 	
-	/*script to pin footer to bottom of website */
-	
-	$(document).ready(function() {
+</script><!--End Page Scripts-->
 
-	   var docHeight = $(window).height();
-	   var footerHeight = $('#footer').height();
-	   var footerTop = $('#footer').position().top + footerHeight;
-
-	   if (footerTop < docHeight) {
-		$('#footer').css('margin-top', 10+ (docHeight - footerTop) + 'px');
-	}
-  });
-
-</script>
+</div><!--end containerWrap id-->
+	</div><!--end pageContainer id-->	
 	
 <div id ="footer">
-	Online Developer Plus, Inc. | &copy; <script type="text/javascript">document.write(new Date().getFullYear());
-	</script> | All Rights Reserved
+		Online Developer Plus, Inc. | &copy; 2019 - 2022 | All Rights Reserved
 </div>
-		
+
 </body>
 </html>
