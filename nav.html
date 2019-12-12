@@ -1,0 +1,61 @@
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="index.html">OnDev&#x2b;</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class = "active nav-tab home-tab"><a href="index.html">Home</a></li>
+                <li class = "nav-tab"><a href="index.html#courses">Courses</a></li>
+                <li class = "nav-tab"><a href="index.html#staff">Staff</a></li>
+                <li class = "nav-tab"><a href="enrollment.html">Enrollment</a></li>
+                <li class = "nav-tab"><a href="tests.php">Final Tests</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+      <script>//nav script
+      
+          $('.nav-tab').click(function(){
+              $('.nav-tab').removeClass('active');
+              $('.nav-tab').removeClass("nav-active");
+              $(this).addClass("nav-active");
+              $(this).addClass("active")		
+          });
+          /*this jQuery script makes collapsed navigation retract once a nav item is selected in the fixed nav*/
+            $(document).on('click', function(event){
+            var $clickedOn = $(event.target),
+                $collapsableItems = $('.collapse'),
+                isToggleButton = ($clickedOn.closest('.navbar-toggle').length == 1),
+                isLink = ($clickedOn.closest('a').length == 1),
+                isOutsideNavbar = ($clickedOn.parents('.navbar').length == 0);
+      
+            if( (!isToggleButton && isLink) || isOutsideNavbar ) {
+              $collapsableItems.each(function(){
+                $(this).collapse('hide');
+              });
+            }
+          });
+          
+          $(document).ready(function(){
+              $("#homeTab").addClass("nave-active active")
+      // 		if (window.location.hash == "#courses" && ){
+              
+      // 			$("#courses").css("color", "red");
+      // 		//document.getElementById("courses").click();
+      // 		//$(this).addClass("nav-active");
+      // 	}
+       });
+      </script>
+      
+      
+

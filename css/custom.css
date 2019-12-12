@@ -1,7 +1,7 @@
 /* --------------------------------------------------------
 Style Sheet for Online Developer Plus, Inc
-version: 8.0
-last modified: 11.5.2019 by Brian Kidd
+version: 8.2.1
+last modified: 12.05.2019 by Brian Kidd
 author: Brian Kidd
 email: brian.kidd.one@gmail.com
 website: briankiddmedia.com
@@ -218,6 +218,12 @@ ul.unordered-list{
 	color: #404040;
 	font-family: 'Roboto', sans-serif;
 }
+ul.unordered-list-bullet{
+	font-size:17px;
+	color: #404040;
+	font-family: 'Roboto', sans-serif;
+	margin-left: 60px;
+}
 .table{
 	font-size:17px;
 	font-family: 'Roboto', sans-serif;
@@ -231,11 +237,46 @@ ul.unordered-list{
 form#loginForm{
 	text-align: center;
 }
+div.wanted{
+	background-color:#457ABF;
+	margin-bottom:20px;
+}
+div.wanted a{
+	color:#F2DC05;
+	
+}
+div.wanted a:hover{
+	text-decoration: underline;
+}
+
+div.wanted p{
+	background-color:#457ABF;
+	color: #FFFFFF;
+	padding:20px;
+}
+div.wanted h1{
+	background-color:#457ABF;
+	color: #FFFFFF;
+}
 #testLoginInput{
 	margin: 0 auto;
 	background-color: #FFFFFF;
 	padding: 10px 10px 10px 10px;
 	width: 50%;
+}
+div.formDiv{
+	display: block;
+	text-align: center;
+}
+form.form{
+	display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+ul#seminars{
+	display:table;
+	margin: 0 auto;
 }
 div#footer{
 	/*position: absolute;
@@ -317,7 +358,9 @@ div#footer{
 		margin-right: 40px;
 	
 	}
-	
+	ul.unordered-list-bullet{
+		margin-left: 0px;
+	}
 }
 
 @media only screen and (max-width:424px){
